@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #e0e0e0;
+}
+
+.container {
+  width: 40%;
+  margin: 40px auto;
+  border: 2px solid slategrey;
+  border-radius: 10px;
+}
+
+.card {
+  margin: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  border: 2px solid slategrey;
+  box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ebebeb;
+}
+
+.card > p {
+  font-size: 12px;
+}
+
+#orange{
+    border-color: orange;
+    float: right;
+    width: 46%;
+}
+
+#apple{
+    border-color: crimson;
+    float: left;
+    width: 46%;
+}
+
+#pineapple{
+    border-color: green;
+    clear: left;
+    /* float: right; */
+    /* width: 46%; */
+}
+
+#tiger-img{
+  float: right;
+  position: relative;
+  top: 74px;
+  right: 34px;
+  transform: rotate(30deg);
+  opacity: 0.5;
+}
+
+#tiger-card{
+  margin-top: 40px;
+}
