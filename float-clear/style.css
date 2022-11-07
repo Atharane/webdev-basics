@@ -46,15 +46,18 @@ body {
     /* width: 46%; */
 }
 
-#tiger-img{
+#quote-img{
   float: right;
   position: relative;
-  top: 74px;
-  right: 34px;
-  transform: rotate(30deg);
-  opacity: 0.5;
+  right: 0;
+  transform: rotate(10deg);
 }
 
 #tiger-card{
   margin-top: 40px;
+}
+
+#tiger-card > h3{
+  color: orangered;
+  font-weight: bolder;
 }
