@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nabla", cursive;
+  font-family: "Inter", sans-serif;
+}
+
+body{
+  background: #e0e0e0;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 460px;
+  height: 150px;
+  background: rgb(100, 65, 164);
+  background: linear-gradient(
+    180deg,
+    #31e1e4 0%,
+    #44a4f4 100%
+  );
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.card--info {
+  font-size: 12px;
+  color: white;
+  padding: 20px;
+
+}
+
+.card--info .temperature {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.location-wrapper{
+  margin-bottom: 4px;
+}
+
+.location{
+  font-weight: 300;
+}
+
+.location-wrapper > img {
+  height: 8px;
+}
+
+.cloud > div{
+  margin-left: auto;
+  height: 50px;
+  background: white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#cloud--layer1{
+  background-color: #3baded;
+  width: 200px;
+}
+
+
+#cloud--layer2{
+  background-color: #4097ef;
+  width: 160px;
+}
+
+#cloud--layer3{
+  background-color: #4287ef;
+  width: 120px;
+}
+
