@@ -34,9 +34,12 @@ body{
 }
 
 .card--info .temperature {
+  margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
-  margin: 0;
+  background-image: linear-gradient(90deg, #665d5d, #020a17);
+  background-clip: text;
+  color: transparent;
 }
 
 .location-wrapper{
