@@ -37,7 +37,7 @@ body{
   margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
-  background-image: linear-gradient(90deg, #665d5d, #020a17);
+  background-image: linear-gradient(90deg, #3b89c9, #020a17);
   background-clip: text;
   color: transparent;
 }
