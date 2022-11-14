@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=IBM+Plex+Mono:ital@1&display=swap');
+
+.wrapper {
+  width: 50%;
+  margin: 40px auto;
+}
+
+header {
+  padding: 20px;
+  background-color: #27253a;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Coming Soon", cursive;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.wrapper style {
+  display: block;
+  padding: 20px;
+  color: #00fda0;
+  background-color: #353753;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "IBM Plex Mono", monospace;
+
+}
+
+/* when body is selected remove the border*/
+.wrapper style:focus {
+  outline: none;
+}
