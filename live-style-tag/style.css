@@ -12,6 +12,7 @@ header {
   text-align: center;
   font-size: 1.5rem;
   font-family: "Coming Soon", cursive;
+  font-weight: bolder;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
