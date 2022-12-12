@@ -1,17 +1,19 @@
 /* variable declaration */
 :root {
+  --side: 180px;
   --charleston-green: #282b28;
-  --light-cyan: #D2FDFF;
+  --light-cyan: #d2fdff;
   --vivid-sky-blue: #4cc9f0;
   --cherry-red: #f72585;
   --trypan-blue: #3a0ca3;
+  --vivid-sky-blue-copy: var(--vivid-sky-blue);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--light-cyan)
+  color: var(--light-cyan);
 }
 
 html {
@@ -36,11 +38,19 @@ nav ul li a {
   font-size: 1.6rem;
 }
 
-.box {
-  --light-cyan: #C7DFC5; /* local redeclaration */
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  height: 10vw;
-  width: 10vw;
+.box {
+  --light-cyan: #c7dfc5; /* local redeclaration */
+  --vivid-sky-blue-copy: #1397c0; /* won't change the value of --vivid-sky-blue */
+  --light-cyan: #50e442; /* style won't casscade unless explicitly specified */
+
+  height: var(--side);
+  width: var(--side);
   padding: 1rem;
   margin: 1rem;
   border-radius: 0.6rem;
@@ -57,11 +67,21 @@ nav ul li a {
 }
 
 .box button {
-    padding: 0.4rem 1rem;
-    margin-top: 1rem;
-    border: none;
-    border-radius: 0.4rem;
-    background-color: var(--cherry-red);
-    font-weight: 700;
-    cursor: pointer;
+  padding: 0.4rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: var(--cherry-red);
+  font-weight: 700;
+  cursor: pointer;
+
+  /* explicitly specifying style */
+  color: var(--light-cyan);
+}
+
+/* change --side to 120px on mobile*/
+@media (width <= 468px) {
+  .box {
+    --side: 120px;
+  }
 }
