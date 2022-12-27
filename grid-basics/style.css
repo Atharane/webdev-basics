@@ -1,9 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 header {
-  font-family: 'Permanent Marker', cursive;
+  margin-bottom: 1em;
+  font-family: "Permanent Marker", cursive;
   text-align: center;
   font-size: 2em;
   font-weight: 600;
 }
 
+.container {
+  /* border: 2px dashed var(--raisin); */
+  /* width: fit-content; */
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: 6em 96px 3fr 2fr; */
+  grid-template-columns: repeat(5, 1fr 2fr);
+  grid-template-rows: repeat(10, 50px);
+  /* grid-template-rows: 1fr 2fr 3fr; */
+  /* grid-auto-rows: 40px; */
+  /* grid-auto-flow: column; */
+  /* grid-auto-columns: 40px; */
+  grid-gap: 1em;
+}
+
+.item1 {
+  background-color: #bada55;
+  grid-column: 3 / 5;
+}
+
+.item2 {
+  background-color: #bada55;
+  grid-column: 5 / -1;
+}
+
+.item5 {
+  background-color: #bada55;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.item8 {
+  background-color: #bada55;
+  grid-row: span 2;
+}
+
+.item15 {
+  background-color: #bada55;
+  grid-column: 1 / -1;
+}
+
+.item18 {
+  background-color: #bada55;
+  grid-column: span 4 / 9;
+}
+
+.item20 {
+  background-color: #bada55;
+  grid-row: 4 / span 3;
+}
+
+/* .item{
+  aspect-ratio: 1/1;
+} */
+
+/* .item19 {
+  background-color: #bada55;
+  grid-column: 1 / -1;
+  grid-row: 1 / 12;
+} */
